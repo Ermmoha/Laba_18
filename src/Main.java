@@ -20,11 +20,11 @@ public class Main {
             arr[i] = scanner.nextInt();
         }
 
-        sortArray(arr, (a, b) -> a < b);
+        sortArray(arr, (a, b) -> a > b);
         System.out.println("Отсортированный массив по возрастанию:");
         System.out.println(Arrays.toString(arr));
 
-        sortArray(arr, (a, b) -> a > b);
+        sortArray(arr, (a, b) -> a < b);
         System.out.println("Отсортированный массив по убыванию:");
         System.out.println(Arrays.toString(arr));
     }
